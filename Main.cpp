@@ -42,6 +42,31 @@ item[5].name = "Heart";
 item[6].name = "Crescent";
 item[7].name = "Star";
 
+void play(void) {
+  return;
+}
+
+void help(void) {
+  std::cout << "Select a number that appears to interact" << std::endl;
+  return;
+}
+
+void credits(void) {
+  std::cout << "Developer: Pixie-Zenne" << std::endl;
+  return;
+}
+
+void title(void) {
+  std::cout << "Termy The Shopkeeper" << std::endl;
+  std::cout << "--------------------" << std::endl;
+  std::cout << "[1] Play" << std::endl;
+  std::cout << "[2] Help" << std::endl;
+  std::cout << "[3] Credits" << std::endl;
+  std::cout << "[4] Exit" << std::endl;
+  
+  return;
+}
+
 int main(void) {
   uint8_t IsGameRunning = 1;
 
