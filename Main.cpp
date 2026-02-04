@@ -1,3 +1,4 @@
+#include <cstdint>
 #include <cstring>
 #include <iostream>
 
@@ -6,41 +7,32 @@ struct CHARACTER {
   uint16_t money;
 };
 
-struct CHARACTER character[8];
-
-character[0].name = "Termy";
-character[1].name = "Yunna";
-character[2].name = "Doiko";
-character[3].name = "Tei";
-character[4].name = "Atru";
-character[5].name = "Cinni";
-character[6].name = "Bopt";
-character[7].name = "Zeec";
-
-character[0].money = 20;
-character[1].money = 100;
-character[2].money = 100;
-character[3].money = 100;
-character[4].money = 100;
-character[5].money = 100;
-character[6].money = 100;
-character[7].money = 100;
+struct CHARACTER character[8] = {
+  {"Termy", 20},
+  {"Yunna", 100},
+  {"Doiko", 100},
+  {"Tei", 100},
+  {"Atru", 100},
+  {"Cinni", 100},
+  {"Bopt", 100},
+  {"Zeec", 100}
+};
 
 struct ITEM {
   char name[10];
   uint16_t price;
 };
 
-struct ITEM item[8];
-
-item[0].name = "Circle";
-item[1].name = "Triangle";
-item[2].name = "Square";
-item[3].name = "Rectangle";
-item[4].name = "Arrow";
-item[5].name = "Heart";
-item[6].name = "Crescent";
-item[7].name = "Star";
+struct ITEM item[8] = {
+  {"Circle", 100},
+  {"Triangle", 100},
+  {"Square", 100},
+  {"Rectangle", 100},
+  {"Arrow", 100},
+  {"Heart", 100},
+  {"Crescent", 100},
+  {"Star", 100}
+};
 
 void play(void) {
   return;
@@ -69,9 +61,35 @@ void title(void) {
 
 int main(void) {
   uint8_t IsGameRunning = 1;
+  uint8_t UserInput = 0
 
-  while (IsGameRunning == 1) {
+  while (IsGameRunning != 0) {
+    title();
+    std::cout << "> ";
+    std::cin >> UserInput;
 
+    switch (UserInput) {
+      case 1:
+        play();
+        break;
+
+      case 2:
+        help();
+        break;
+
+      case 3:
+        credits();
+        break;
+
+      case 4:
+        std::cout << "Goodbye player" << std::endl;
+        IsGameRunning = 0;
+        break;
+
+      default:
+        std::cout << "Invalid input" << std::endl;
+        break;
+    }
   }
 
   return 0;
