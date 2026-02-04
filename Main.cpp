@@ -2,20 +2,20 @@
 #include <iostream>
 
 struct CHARACTER {
-  char name[10];
+  char name[6];
   uint16_t money;
 };
 
 struct CHARACTER character[8];
 
 character[0].name = "Termy";
-character[1].name = "";
-character[2].name = "";
-character[3].name = "";
-character[4].name = "";
-character[5].name = "";
-character[6].name = "";
-character[7].name = "";
+character[1].name = "Yunna";
+character[2].name = "Doiko";
+character[3].name = "Tei";
+character[4].name = "Atru";
+character[5].name = "Cinni";
+character[6].name = "Bopt";
+character[7].name = "Zeec";
 
 character[0].money = 20;
 character[1].money = 100;
