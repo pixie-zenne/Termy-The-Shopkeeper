@@ -34,7 +34,27 @@ struct ITEM item[8] = {
   {"Star", 100}
 };
 
+void day1(void) {
+  return;
+}
+
+void day2(void) {
+  return;
+}
+
+void day3(void) {
+  return;
+}
+
+void day4(void) {
+  return;
+}
+
 void play(void) {
+  day1();
+  day2();
+  day3();
+  day4();
   return;
 }
 
