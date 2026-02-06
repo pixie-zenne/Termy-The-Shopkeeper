@@ -8,31 +8,54 @@ struct CHARACTER {
 };
 
 struct CHARACTER character[8] = {
-  {"Termy", 20},
-  {"Yunna", 100},
-  {"Doiko", 100},
-  {"Tei", 100},
-  {"Atru", 100},
-  {"Cinni", 100},
-  {"Bopt", 100},
-  {"Zeec", 100}
+  {"Termy", 1000},
+  {"Yunna", 2000},
+  {"Doiko", 500},
+  {"Tei", 80},
+  {"Atru", 70},
+  {"Cinni", 50},
+  {"Bopt", 20},
+  {"Zeec", 250}
 };
 
-struct ITEM {
+struct SUPPLIER {
   char name[10];
+  uint8_t quantity;
+  uint8_t price;
+};
+
+struct SUPPLIER supplier[8] = {
+  {"Circle", 10, 5},
+  {"Triangle", 10, 10},
+  {"Square", 10, 20},
+  {"Rectangle", 10, 20},
+  {"Arrow", 3, 100},
+  {"Heart", 1, 200},
+  {"Crescent", 1, 50},
+  {"Star", 1, 50}
+};
+
+struct TERMY_INVENTORY {
+  char name[10];
+  uint8_t quantity;
   uint16_t price;
 };
 
-struct ITEM item[8] = {
-  {"Circle", 100},
-  {"Triangle", 100},
-  {"Square", 100},
-  {"Rectangle", 100},
-  {"Arrow", 100},
-  {"Heart", 100},
-  {"Crescent", 100},
-  {"Star", 100}
+struct TERMY_INVENTORY inventory[8] = {
+  {"Circle", 0, 0},
+  {"Triangle", 0, 0},
+  {"Square", 0, 0},
+  {"Rectangle", 0, 0},
+  {"Arrow", 0, 0},
+  {"Heart", 0, 0},
+  {"Crescent", 0, 0},
+  {"Star", 0, 0}
 };
+
+void day0(void) {
+  std::cout << "You (Termy) are preparing to open up your dream shop" << std::endl;
+  return;
+}
 
 void day1(void) {
   return;
@@ -51,6 +74,7 @@ void day4(void) {
 }
 
 void play(void) {
+  day0();
   day1();
   day2();
   day3();
