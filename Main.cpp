@@ -1,4 +1,5 @@
 #include <cstdint>
+#include <cstdlib>
 #include <cstring>
 #include <iostream>
 
@@ -53,13 +54,63 @@ struct TERMY_INVENTORY inventory[8] = {
 };
 
 void day0(void) {
+  using namespace std;
+
   char tmp = {'\0'};
+  uint8_t choice = 0;
 
-  std::cout << "You (Termy) are preparing to open up your dream shop" << std::endl;
-  std::coud << "You currently have" << character[0].money << "money" << std::endl;
+  system("clear");
+  cout << "You (Termy) are preparing to open up your dream shop in a small town" << endl;
+  cout << "Press Enter to continue..."<< endl;
+  cin.get(tmp);
 
-  std::cout << "Press Enter to continue..."<< std::endl;
-  std::cin.get(tmp);
+  system("clear");
+  cout << "You currently have" << character[0].money << "money and your shop is empty" << endl;
+  cout << "Press Enter to continue..."<< endl;
+  cin.get(tmp);
+
+  system("clear");
+  cout << "You decided to travel to a supplier in the city with you friend, Yunna" << endl;
+  cout << "Press Enter to continue..."<< endl;
+  cin.get(tmp);
+
+  system("clear");
+  cout << "Yunna says that the supplier has eight shapes available" << endl;
+  cout << "Press Enter to continue..."<< endl;
+  cin.get(tmp);
+
+  system("clear");
+  cout << "She'll be describing each one" << endl;
+  cout << "Press Enter to continue..."<< endl;
+  cin.get(tmp);
+
+  system("clear");
+  cout << "Yunna:" << endl;
+  cout << "How many circles would you like to buy?" << endl;
+  cout << "The ones that is smooth and circular" << endl;
+  cout << "A single piece costs 5 bucks" << endl;
+  cout << endl;
+  cout << "How many would you like to buy?" << endl;
+  cout << "[1] Buy none (Default)" << endl;
+  cout << "[2] Buy 5 pieces" << endl;
+  cout << "[3] Buy 10 pieces" << endl;
+  cout << "> " << endl;
+  cin >> choice;
+  switch (choice) {
+    case 2:
+      cout << "You bought 5 circles!" << endl;
+      break;
+    case 3:
+      cout << "You bought 10 circles!" << endl;
+      break;
+    default:
+      cout << "You bought no circle!" << endl;
+      break;
+  }
+  cout << "Press Enter to continue..."<< endl;
+  cin.get(tmp);
+
+  // To be continued
 
   return;
 }
@@ -100,12 +151,14 @@ void credits(void) {
 }
 
 void title(void) {
-  std::cout << "Termy The Shopkeeper" << std::endl;
-  std::cout << "--------------------" << std::endl;
-  std::cout << "[1] Play" << std::endl;
-  std::cout << "[2] Help" << std::endl;
-  std::cout << "[3] Credits" << std::endl;
-  std::cout << "[4] Exit" << std::endl;
+  using namespace std;
+
+  cout << "Termy The Shopkeeper" << endl;
+  cout << "--------------------" << endl;;
+  cout << "[1] Play" << endl;
+  cout << "[2] Help" << endl;
+  cout << "[3] Credits" << endl;
+  cout << "[4] Exit" << endl;
   
   return;
 }
