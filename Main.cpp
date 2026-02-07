@@ -8,7 +8,7 @@ struct CHARACTER {
 };
 
 struct CHARACTER character[8] = {
-  {"Termy", 1000},
+  {"Termy", 100},
   {"Yunna", 2000},
   {"Doiko", 500},
   {"Tei", 80},
@@ -53,7 +53,14 @@ struct TERMY_INVENTORY inventory[8] = {
 };
 
 void day0(void) {
+  char tmp = {'\0'};
+
   std::cout << "You (Termy) are preparing to open up your dream shop" << std::endl;
+  std::coud << "You currently have" << character[0].money << "money" << std::endl;
+
+  std::cout << "Press Enter to continue..."<< std::endl;
+  std::cin.get(tmp);
+
   return;
 }
 
