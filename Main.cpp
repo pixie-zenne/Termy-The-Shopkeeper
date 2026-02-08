@@ -99,9 +99,11 @@ void day0(void) {
   switch (choice) {
     case 2:
       cout << "You bought 5 circles!" << endl;
+      character[0].money -= 25;
       break;
     case 3:
       cout << "You bought 10 circles!" << endl;
+      character[0].money -= 50;
       break;
     default:
       cout << "You bought no circle!" << endl;
