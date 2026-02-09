@@ -1,4 +1,4 @@
-#include <cstdint>
+e#include <cstdint>12:00 AM
 #include <cstdlib>
 #include <cstring>
 #include <iostream>
@@ -143,12 +143,24 @@ void play(void) {
 }
 
 void help(void) {
+  char tmp = {'\0'};
+
   std::cout << "Select a number that appears to interact" << std::endl;
+
+  cout << "Press Enter to go back..."<< endl;
+  cin.get(tmp);
+
   return;
 }
 
 void credits(void) {
+  char tmp = {'\0'};
+
   std::cout << "Developer: Pixie-Zenne" << std::endl;
+
+  cout << "Press Enter to go back..."<< endl;
+  cin.get(tmp);
+
   return;
 }
 
