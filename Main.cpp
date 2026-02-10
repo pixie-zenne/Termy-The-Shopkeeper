@@ -1,4 +1,4 @@
-e#include <cstdint>12:00 AM
+#include <cstdint>
 #include <cstdlib>
 #include <cstring>
 #include <iostream>
@@ -145,8 +145,8 @@ void play(void) {
 void help(void) {
   char tmp = {'\0'};
 
+  system("clear");
   std::cout << "Select a number that appears to interact" << std::endl;
-
   cout << "Press Enter to go back..."<< endl;
   cin.get(tmp);
 
@@ -156,8 +156,8 @@ void help(void) {
 void credits(void) {
   char tmp = {'\0'};
 
+  system("clear");
   std::cout << "Developer: Pixie-Zenne" << std::endl;
-
   cout << "Press Enter to go back..."<< endl;
   cin.get(tmp);
 
@@ -182,6 +182,8 @@ int main(void) {
   uint8_t UserInput = 0
 
   while (IsGameRunning != 0) {
+    system("clear");
+
     title();
     std::cout << "> ";
     std::cin >> UserInput;
@@ -208,6 +210,8 @@ int main(void) {
         std::cout << "Invalid input" << std::endl;
         break;
     }
+
+    uint8_t UserInput = 0
   }
 
   return 0;
