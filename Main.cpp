@@ -169,6 +169,7 @@ void title(void) {
 
   cout << "Termy The Shopkeeper" << endl;
   cout << "--------------------" << endl;;
+  cout << "[0] Story" << endl;
   cout << "[1] Play" << endl;
   cout << "[2] Help" << endl;
   cout << "[3] Credits" << endl;
