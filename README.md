@@ -4,7 +4,14 @@ A simple text based game about a blind shopkeeper name Termy managing her 'Shop 
 ## Items
 
 ## Characters
-- Termy (The Shopkeeper)
+- Termy "The Shopkeeper"
+- Yunna
+- Doiko
+- Tei
+- Atru
+- Cinni
+- Bopt
+- Zeec
 
 ## How to play
 When prompted to enter a number, input your selected number to continue the game
