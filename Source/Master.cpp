@@ -59,42 +59,18 @@ To avoid scrolling through lines of code.
 It is much cleaner this way.
 */
 #include "Module00-Day_Zero.cpp"
-
-/* To be created later
 #include "Module01-Day_One.cpp"
 #include "Module02-Day_Two.cpp"
 #include "Module03-Day_Three.cpp"
 #include "Module04-Day_Four.cpp"
 */
 
-/* To be removed later
-
-void day1(void) {
-  return;
-}
-
-void day2(void) {
-  return;
-}
-
-void day3(void) {
-  return;
-}
-
-void day4(void) {
-  return;
-}
-
-*/
-
 void story(void) {
   day0();
-  /* To be removed later
   day1();
   day2();
   day3();
   day4();
-  */
   return;
 }
 
