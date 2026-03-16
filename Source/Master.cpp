@@ -53,52 +53,13 @@ struct TERMY_INVENTORY inventory[8] = {
   {"Star", 0, 0}
 };
 
-/*
-To avoid scrolling through lines of code.
-
-It is much cleaner this way.
-*/
 #include "Module00-Day_Zero.cpp"
 #include "Module01-Day_One.cpp"
 #include "Module02-Day_Two.cpp"
 #include "Module03-Day_Three.cpp"
 #include "Module04-Day_Four.cpp"
-*/
 
-void story(void) {
-  day0();
-  day1();
-  day2();
-  day3();
-  day4();
-  return;
-}
-
-void play(void) {
-  return;
-}
-
-void help(void) {
-  char tmp = {'\0'};
-
-  system("clear");
-  std::cout << "Select a number that appears to interact" << std::endl;
-  cout << "Press Enter to go back..."<< endl;
-  cin.get(tmp);
-
-  return;
-}
-
-void credits(void) {
-  char tmp = {'\0'};
-
-  system("clear");
-  std::cout << "Developer: Pixie-Zenne" << std::endl;
-  cout << "Press Enter to go back..."<< endl;
-  cin.get(tmp);
-
-  return;
-}
+#include "Module10-Title_Screen_Functions.cpp"
 
 void title(void) {
   using namespace std;
