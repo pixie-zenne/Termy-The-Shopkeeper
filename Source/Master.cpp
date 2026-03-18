@@ -3,6 +3,31 @@
 #include <cstring>
 #include <iostream>
 
+/* Thinking of using classes to organize the game's code
+
+class GAME {
+  public:
+
+  typedef struct CHARACTER {
+    char name[6];
+    uint16_t money;
+  };
+
+  typedef struct SUPPLIER {
+    char name[10];
+    uint8_t quantity;
+    uint8_t price;
+  };
+
+  typedef struct TERMY_INVENTORY {
+    char name[10];
+    uint8_t quantity;
+    uint16_t price;
+  };
+};
+
+*/
+
 struct CHARACTER {
   char name[6];
   uint16_t money;
