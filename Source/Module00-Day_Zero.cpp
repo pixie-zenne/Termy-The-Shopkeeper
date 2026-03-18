@@ -37,6 +37,8 @@ void day0(void) {
   cout << "A single piece costs 5 bucks" << endl;
   cout << endl;
   cout << "How many would you like to buy?" << endl;
+
+  // Maybe should perhaps give a prompt that shows how many circles to buy instead of static choices
   cout << "[1] Buy none (Default)" << endl;
   cout << "[2] Buy 5 pieces" << endl;
   cout << "[3] Buy 10 pieces" << endl;
