@@ -60,16 +60,18 @@ void day0(void) {
   cout << "Press Enter to continue..."<< endl;
   cin.get(tmp);
 
-  /*
-  TO BE CHANGED LATER
-  */
-
   // Triangle
   system("clear");
   cout << "Yunna:" << endl;
-  cout << "How many circles would you like to buy?" << endl;
-  cout << "The ones that is smooth and circular" << endl;
-  cout << "A single piece costs 5 bucks" << endl;
+  cout << "Moving on.." << endl;
+  cout << "How many triangles would you like to buy?" << endl;
+  cout << "These have three edges." << endl;
+  cout << "A single piece costs ??? bucks" << endl;
+
+  /*
+  TO BE CHANGED LATER
+  */
+  
   cout << endl;
   cout << "How many would you like to buy?" << endl;
   cout << "[1] Buy none (Default)" << endl;
