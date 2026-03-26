@@ -59,8 +59,6 @@ struct TERMY_INVENTORY inventory[8] = {
 #include "Module03-Day_Three.cpp"
 #include "Module04-Day_Four.cpp"
 
-#include "Module10-Title_Screen_Functions.cpp"
-
 void title(void) {
   using namespace std;
 
@@ -72,6 +70,40 @@ void title(void) {
   cout << "[3] Credits" << endl;
   cout << "[4] Exit" << endl;
   
+  return;
+}
+void story(void) {
+  day0();
+  day1();
+  day2();
+  day3();
+  day4();
+  return;
+}
+
+void play(void) {
+  return;
+}
+
+void help(void) {
+  char tmp = {'\0'};
+
+  system("clear");
+  std::cout << "Select a number that appears to interact" << std::endl;
+  cout << "Press Enter to go back..."<< endl;
+  cin.get(tmp);
+
+  return;
+}
+
+void credits(void) {
+  char tmp = {'\0'};
+
+  system("clear");
+  std::cout << "Developer: Pixie-Zenne" << std::endl;
+  cout << "Press Enter to go back..."<< endl;
+  cin.get(tmp);
+
   return;
 }
 
