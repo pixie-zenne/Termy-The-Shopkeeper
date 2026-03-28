@@ -1,4 +1,4 @@
-void day0(void) {
+void day0_tts(void) {
   using namespace std;
 
   char tmp = {'\0'};
@@ -29,7 +29,11 @@ void day0(void) {
   cout << "Press Enter to continue..."<< endl;
   cin.get(tmp);
 
-  // Circle
+  /*
+  Circle
+  Price : ?
+  Total : ?
+  */
   system("clear");
   cout << "Yunna:" << endl;
   cout << "How many circles would you like to buy?" << endl;
@@ -60,7 +64,11 @@ void day0(void) {
   cout << "Press Enter to continue..."<< endl;
   cin.get(tmp);
 
-  // Triangle
+  /*
+  Triangle
+  Price : ?
+  Total : ?
+  */
   system("clear");
   cout << "Yunna:" << endl;
   cout << "Moving on.." << endl;
@@ -95,7 +103,11 @@ void day0(void) {
   cout << "Press Enter to continue..."<< endl;
   cin.get(tmp);
 
-  // Square
+  /*
+  Square
+  Price : ?
+  Total : ?
+  */
   system("clear");
   cout << "Yunna:" << endl;
   cout << "How many circles would you like to buy?" << endl;
@@ -124,7 +136,11 @@ void day0(void) {
   cout << "Press Enter to continue..."<< endl;
   cin.get(tmp);
 
-  // Rectangle
+  /*
+  Rectangle
+  Price : ?
+  Total : ?
+  */
   system("clear");
   cout << "Yunna:" << endl;
   cout << "How many circles would you like to buy?" << endl;
@@ -153,7 +169,11 @@ void day0(void) {
   cout << "Press Enter to continue..."<< endl;
   cin.get(tmp);
 
-  // Arrow
+  /*
+  Arrow
+  Price : ?
+  Total : ?
+  */
   system("clear");
   cout << "Yunna:" << endl;
   cout << "How many circles would you like to buy?" << endl;
@@ -182,7 +202,11 @@ void day0(void) {
   cout << "Press Enter to continue..."<< endl;
   cin.get(tmp);
 
-  // Heart
+  /*
+  Heart
+  Price : ?
+  Total : ?
+  */
   system("clear");
   cout << "Yunna:" << endl;
   cout << "How many circles would you like to buy?" << endl;
@@ -211,7 +235,11 @@ void day0(void) {
   cout << "Press Enter to continue..."<< endl;
   cin.get(tmp);
 
-  // Crescent
+  /*
+  Arrow
+  Crescent : ?
+  Total : ?
+  */
   system("clear");
   cout << "Yunna:" << endl;
   cout << "How many circles would you like to buy?" << endl;
@@ -240,7 +268,11 @@ void day0(void) {
   cout << "Press Enter to continue..."<< endl;
   cin.get(tmp);
 
-  // Star
+  /*
+  Star
+  Price : ?
+  Total : ?
+  */
   system("clear");
   cout << "Yunna:" << endl;
   cout << "How many circles would you like to buy?" << endl;
