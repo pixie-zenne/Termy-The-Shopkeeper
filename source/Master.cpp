@@ -53,11 +53,11 @@ struct TERMY_INVENTORY inventory[8] = {
   {"Star", 0, 0}
 };
 
-#include "Module00-Day_Zero.cpp"
-#include "Module01-Day_One.cpp"
-#include "Module02-Day_Two.cpp"
-#include "Module03-Day_Three.cpp"
-#include "Module04-Day_Four.cpp"
+#include "Day0_TTS.cpp"
+#include "Day1_TTS.cpp"
+#include "Day2_TTS.cpp"
+#include "Day3_TTS.cpp"
+#include "Day4_TTS.cpp"
 
 void title(void) {
   using namespace std;
