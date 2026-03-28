@@ -1,7 +1,22 @@
+#define master main
+
+/*************************************
+ * @author pixie-zenne
+ * @version 0.0.0 WIP 
+ * @license Apache License Version 2.0
+ *************************************/
+
 #include <cstdint>
 #include <cstdlib>
 #include <cstring>
 #include <iostream>
+
+/**************************************
+ * The essential variables for the game
+ * CHARACTER
+ * SUPPLIER
+ * TERMY_INVENTORY
+ **************************************/
 
 struct CHARACTER {
   char name[6];
@@ -53,11 +68,16 @@ struct TERMY_INVENTORY inventory[8] = {
   {"Star", 0, 0}
 };
 
+/* To avoid scrolling through lines of dialogue */
 #include "Day0_TTS.cpp"
 #include "Day1_TTS.cpp"
 #include "Day2_TTS.cpp"
 #include "Day3_TTS.cpp"
 #include "Day4_TTS.cpp"
+
+/********************
+ * The game functions
+ ********************/
 
 void title(void) {
   using namespace std;
@@ -73,11 +93,11 @@ void title(void) {
   return;
 }
 void story(void) {
-  day0();
-  day1();
-  day2();
-  day3();
-  day4();
+  day0_tts();
+  day1_tts();
+  day2_tts();
+  day3_tts();
+  day4_tts();
   return;
 }
 
@@ -107,11 +127,11 @@ void credits(void) {
   return;
 }
 
-int main(void) {
-  uint8_t IsGameRunning = 1;
+int master(void) {
+  bool IsGameRunning = true;
   uint8_t UserInput = 0
 
-  while (IsGameRunning != 0) {
+  while (IsGameRunning == true) {
     system("clear");
 
     title();
@@ -137,7 +157,7 @@ int main(void) {
 
       case 4:
         std::cout << "Goodbye player" << std::endl;
-        IsGameRunning = 0;
+        IsGameRunning = false;
         break;
 
       default:
